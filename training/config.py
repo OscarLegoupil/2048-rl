@@ -34,13 +34,14 @@ class Config:
     # Too high (0.01) → unstable, bounces around
     # Too low (0.00001) → learns too slowly
     # 0.001 is the sweet spot for most problems
-    LEARNING_RATE = 0.001
+    LEARNING_RATE = 0.0001
+
     
     # Gamma (discount factor): How much we value future rewards
     # 0.99 = "I care about long-term strategy"
     # 0.5 = "I only care about immediate rewards"
     # For 2048, we want long-term thinking → 0.99
-    GAMMA = 0.99
+    GAMMA = 0.95
     
     # Batch size: How many experiences to train on at once
     # Larger = more stable but slower
